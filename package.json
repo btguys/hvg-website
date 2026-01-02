@@ -1,0 +1,23 @@
+{
+  "name": "hvg-website",
+  "version": "1.0.0",
+  "description": "HVG - 现代数字创意科技公司网站",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server",
+    "build": "tailwindcss -i styles.css -o dist/styles.css --minify",
+    "watch": "tailwindcss -i styles.css -o dist/styles.css --watch"
+  },
+  "keywords": [
+    "website",
+    "tailwind",
+    "modern",
+    "tech",
+    "company"
+  ],
+  "author": "HVG Team",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.3.0"
+  }
+}

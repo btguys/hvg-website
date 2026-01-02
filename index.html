@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HVG - 數碼創意科技公司</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
+    <!-- 导航栏 -->
+    <nav id="navbar" class="fixed inset-x-0 top-0 w-full backdrop-blur-md bg-slate-900/80 border-b border-slate-700/50 z-50 transition-all duration-300 navbar-expanded">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <img id="navbar-logo" src="images/hvg-logo.png" alt="HVG 數碼創意科技" class="logo-expanded w-auto drop-shadow-lg" />
+                    <span id="navbar-brand" class="text-xl font-semibold tracking-wide text-white/90">HYERVIEW</span>
+                    <span class="sr-only">HVG</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#services" class="hover:text-cyan-400 transition duration-300">服務</a>
+                    <a href="#features" class="hover:text-cyan-400 transition duration-300">特色</a>
+                    <a href="#portfolio" class="hover:text-cyan-400 transition duration-300">作品</a>
+                </div>
+                <button onclick="toggleMenu()" class="md:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 移动菜单 -->
+    <div id="mobile-menu" class="hidden fixed top-16 left-0 right-0 bg-slate-800 border-b border-slate-700 md:hidden">
+        <div class="px-4 py-4 space-y-4">
+            <a href="#services" class="block hover:text-cyan-400">服務</a>
+            <a href="#features" class="block hover:text-cyan-400">特色</a>
+            <a href="#portfolio" class="block hover:text-cyan-400">作品</a>
+        </div>
+    </div>
+
+    <!-- 英雄区 -->
+    <section class="pt-40 pb-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 animate-fade-in">
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+                        打造數碼時代的
+                        <span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+                            創意力量
+                        </span>
+                    </h1>
+                    <p class="text-xl text-slate-300 leading-relaxed">
+                        我們是一支融合創意與技術的團隊，專注於系統開發、社交媒體營運和全案策劃，為您的品牌賦能。
+                    </p>
+                </div>
+                <div class="relative hidden md:block">
+                    <div class="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-2xl blur-3xl opacity-20"></div>
+                    <div class="relative bg-gradient-to-br from-slate-800 to-slate-700 rounded-2xl p-8 border border-slate-600">
+                        <div class="space-y-4">
+                            <div class="h-3 bg-cyan-400 rounded w-1/2"></div>
+                            <div class="h-3 bg-cyan-400/50 rounded w-full"></div>
+                            <div class="h-3 bg-cyan-400/50 rounded w-3/4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 服務區域 -->
+    <section id="services" class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-800/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    我們的核心服務
+                </h2>
+                <p class="text-xl text-slate-300">
+                    專業的解決方案，助力您的業務增長
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- 系統開發 -->
+                <div class="group bg-gradient-to-br from-slate-800 to-slate-700 border border-slate-600 rounded-xl p-8 hover:border-cyan-400/50 transition duration-300 hover:shadow-lg hover:shadow-cyan-500/10">
+                    <div class="w-12 h-12 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">系統開發</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        從架構設計到部署上線，我們提供全端系統開發服務，包括 Web 應用、流動應用和企業級解決方案。
+                    </p>
+                    <div class="mt-6 pt-6 border-t border-slate-600">
+                        <ul class="space-y-2 text-sm text-slate-300">
+                            <li class="flex items-center">
+                                <span class="text-cyan-400 mr-2">✓</span>
+                                前後端開發
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-cyan-400 mr-2">✓</span>
+                                雲端部署
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-cyan-400 mr-2">✓</span>
+                                效能優化
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 社交媒體營運 -->
+                <div class="group bg-gradient-to-br from-slate-800 to-slate-700 border border-slate-600 rounded-xl p-8 hover:border-cyan-400/50 transition duration-300 hover:shadow-lg hover:shadow-cyan-500/10">
+                    <div class="w-12 h-12 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zm-5.04-6.71l-2.75 3.54-1.41-1.41L8.5 17h8V8.5h-1.5v4.79z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">社交媒體營運</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        精準的內容策略與創意執行，協助您在主流社交平台建立強勢品牌形象和粉絲社群。
+                    </p>
+                    <div class="mt-6 pt-6 border-t border-slate-600">
+                        <ul class="space-y-2 text-sm text-slate-300">
+                            <li class="flex items-center">
+                                <span class="text-cyan-400 mr-2">✓</span>
+                                內容創意策劃
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-cyan-400 mr-2">✓</span>
+                                社群營運管理
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-cyan-400 mr-2">✓</span>
+                                數據分析優化
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 全案策劃 -->
+                <div class="group bg-gradient-to-br from-slate-800 to-slate-700 border border-slate-600 rounded-xl p-8 hover:border-cyan-400/50 transition duration-300 hover:shadow-lg hover:shadow-cyan-500/10">
+                    <div class="w-12 h-12 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">全案策劃</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        從市場調研到品牌建立，我們提供一站式品牌策劃服務，助您打造獨特的市場競爭力。
+                    </p>
+                    <div class="mt-6 pt-6 border-t border-slate-600">
+                        <ul class="space-y-2 text-sm text-slate-300">
+                            <li class="flex items-center">
+                                <span class="text-cyan-400 mr-2">✓</span>
+                                品牌策略制定
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-cyan-400 mr-2">✓</span>
+                                創意概念設計
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-cyan-400 mr-2">✓</span>
+                                執行落地支援
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 特色區域 -->
+    <section id="features" class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    為什麼選擇我們
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-slate-800/50 border border-slate-700 rounded-lg p-6 hover:border-cyan-400/30 transition duration-300">
+                    <div class="text-3xl font-bold text-cyan-400 mb-2">50+</div>
+                    <p class="text-slate-400">成功項目交付</p>
+                </div>
+                <div class="bg-slate-800/50 border border-slate-700 rounded-lg p-6 hover:border-cyan-400/30 transition duration-300">
+                    <div class="text-3xl font-bold text-cyan-400 mb-2">20</div>
+                    <p class="text-slate-400">優秀專業團隊</p>
+                </div>
+                <div class="bg-slate-800/50 border border-slate-700 rounded-lg p-6 hover:border-cyan-400/30 transition duration-300">
+                    <div class="text-3xl font-bold text-cyan-400 mb-2">10+</div>
+                    <p class="text-slate-400">年行業經驗</p>
+                </div>
+                <div class="bg-slate-800/50 border border-slate-700 rounded-lg p-6 hover:border-cyan-400/30 transition duration-300">
+                    <div class="text-3xl font-bold text-cyan-400 mb-2">98%</div>
+                    <p class="text-slate-400">客戶滿意度</p>
+                </div>
+            </div>
+
+            <!-- 优势列表 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
+                <div class="space-y-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-8 h-8 bg-cyan-400/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                            <div class="w-4 h-4 bg-cyan-400 rounded-full"></div>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold mb-1">技術領先</h3>
+                            <p class="text-slate-400">採用最新技術棧與行業最佳實踐</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="w-8 h-8 bg-cyan-400/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                            <div class="w-4 h-4 bg-cyan-400 rounded-full"></div>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold mb-1">創意驅動</h3>
+                            <p class="text-slate-400">以創新思維和數據驅動的策略</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="w-8 h-8 bg-cyan-400/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                            <div class="w-4 h-4 bg-cyan-400 rounded-full"></div>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold mb-1">全流程服務</h3>
+                            <p class="text-slate-400">從諮詢到交付的完整解決方案</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-8 h-8 bg-cyan-400/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                            <div class="w-4 h-4 bg-cyan-400 rounded-full"></div>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold mb-1">快速回應</h3>
+                            <p class="text-slate-400">24 小時內回應客戶需求與問題</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="w-8 h-8 bg-cyan-400/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                            <div class="w-4 h-4 bg-cyan-400 rounded-full"></div>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold mb-1">性價比優</h3>
+                            <p class="text-slate-400">提供業界具競爭力的價格方案</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="w-8 h-8 bg-cyan-400/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                            <div class="w-4 h-4 bg-cyan-400 rounded-full"></div>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold mb-1">長期合作</h3>
+                            <p class="text-slate-400">建立穩定的長期合作關係</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品展示 -->
+    <section id="portfolio" class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-800/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    精選作品
+                </h2>
+                <p class="text-xl text-slate-300">
+                    展示我們的創意與技術實力
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="group relative bg-gradient-to-br from-slate-800 to-slate-700 rounded-lg overflow-hidden border border-slate-600 hover:border-cyan-400/50 transition duration-300">
+                    <div class="h-64 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 flex items-center justify-center">
+                        <div class="text-center">
+                            <div class="text-4xl mb-2">💻</div>
+                            <p class="text-slate-400">內容管理平台</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">內容管理平台開發</h3>
+                        <p class="text-slate-400 text-sm mb-4">
+                            模組化內容管理與工作流程，支援多語內容、角色與權限控管，並整合 API 供前端多端輸出。
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs bg-cyan-400/20 text-cyan-400 px-3 py-1 rounded-full">React</span>
+                            <span class="text-xs bg-cyan-400/20 text-cyan-400 px-3 py-1 rounded-full">Node.js</span>
+                            <span class="text-xs bg-cyan-400/20 text-cyan-400 px-3 py-1 rounded-full">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative bg-gradient-to-br from-slate-800 to-slate-700 rounded-lg overflow-hidden border border-slate-600 hover:border-cyan-400/50 transition duration-300">
+                    <div class="h-64 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 flex items-center justify-center">
+                        <div class="text-center">
+                            <div class="text-4xl mb-2">📱</div>
+                            <p class="text-slate-400">社交媒體營銷</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">品牌社媒營運</h3>
+                        <p class="text-slate-400 text-sm mb-4">
+                            策劃並執行全渠道社交媒體營銷，粉絲增長 50 萬，轉化率提升 200%。
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs bg-cyan-400/20 text-cyan-400 px-3 py-1 rounded-full">策劃</span>
+                            <span class="text-xs bg-cyan-400/20 text-cyan-400 px-3 py-1 rounded-full">創意</span>
+                            <span class="text-xs bg-cyan-400/20 text-cyan-400 px-3 py-1 rounded-full">營運</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative bg-gradient-to-br from-slate-800 to-slate-700 rounded-lg overflow-hidden border border-slate-600 hover:border-cyan-400/50 transition duration-300">
+                    <div class="h-64 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 flex items-center justify-center">
+                        <div class="text-center">
+                            <div class="text-4xl mb-2">🎯</div>
+                            <p class="text-slate-400">品牌全案策劃</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">企業品牌建設</h3>
+                        <p class="text-slate-400 text-sm mb-4">
+                            從品牌定位到視覺設計，完整品牌建設方案，市場認知度提升 300%。
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs bg-cyan-400/20 text-cyan-400 px-3 py-1 rounded-full">品牌</span>
+                            <span class="text-xs bg-cyan-400/20 text-cyan-400 px-3 py-1 rounded-full">設計</span>
+                            <span class="text-xs bg-cyan-400/20 text-cyan-400 px-3 py-1 rounded-full">策略</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 流程區域 -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    我們的工作流程
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="relative">
+                    <div class="absolute top-12 left-1/2 right-0 h-1 bg-gradient-to-r from-cyan-400 to-transparent hidden md:block"></div>
+                    <div class="bg-gradient-to-br from-slate-800 to-slate-700 rounded-lg p-8 relative z-10 border border-slate-600 hover:border-cyan-400/50 transition duration-300">
+                        <div class="w-12 h-12 bg-cyan-400 rounded-full flex items-center justify-center mb-4 text-white font-bold text-lg mx-auto">
+                            1
+                        </div>
+                        <h3 class="text-lg font-bold text-center mb-2">需求溝通</h3>
+                        <p class="text-slate-400 text-center text-sm">
+                            深入了解您的業務需求與目標
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="absolute top-12 left-1/2 right-0 h-1 bg-gradient-to-r from-cyan-400 to-transparent hidden md:block"></div>
+                    <div class="bg-gradient-to-br from-slate-800 to-slate-700 rounded-lg p-8 relative z-10 border border-slate-600 hover:border-cyan-400/50 transition duration-300">
+                        <div class="w-12 h-12 bg-cyan-400 rounded-full flex items-center justify-center mb-4 text-white font-bold text-lg mx-auto">
+                            2
+                        </div>
+                        <h3 class="text-lg font-bold text-center mb-2">方案策劃</h3>
+                        <p class="text-slate-400 text-center text-sm">
+                            制定詳細方案與時間規劃
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="absolute top-12 left-1/2 right-0 h-1 bg-gradient-to-r from-cyan-400 to-transparent hidden md:block"></div>
+                    <div class="bg-gradient-to-br from-slate-800 to-slate-700 rounded-lg p-8 relative z-10 border border-slate-600 hover:border-cyan-400/50 transition duration-300">
+                        <div class="w-12 h-12 bg-cyan-400 rounded-full flex items-center justify-center mb-4 text-white font-bold text-lg mx-auto">
+                            3
+                        </div>
+                        <h3 class="text-lg font-bold text-center mb-2">創意執行</h3>
+                        <p class="text-slate-400 text-center text-sm">
+                            按計劃高效執行項目，定期匯報進展
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-slate-800 to-slate-700 rounded-lg p-8 relative z-10 border border-slate-600 hover:border-cyan-400/50 transition duration-300">
+                        <div class="w-12 h-12 bg-cyan-400 rounded-full flex items-center justify-center mb-4 text-white font-bold text-lg mx-auto">
+                            4
+                        </div>
+                        <h3 class="text-lg font-bold text-center mb-2">完善優化</h3>
+                        <p class="text-slate-400 text-center text-sm">
+                            上線後持續優化與技術支援
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="border-t border-slate-700 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-lg font-bold mb-4">
+                        <span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">HVG</span>
+                    </h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        數碼創意科技公司，致力為企業打造創意與技術結合的數碼方案。
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">服務</h4>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li><a href="#services" class="hover:text-cyan-400 transition">系統開發</a></li>
+                        <li><a href="#services" class="hover:text-cyan-400 transition">社媒營運</a></li>
+                        <li><a href="#services" class="hover:text-cyan-400 transition">全案策劃</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">關於</h4>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li><a href="#" class="hover:text-cyan-400 transition">公司簡介</a></li>
+                        <li><a href="#portfolio" class="hover:text-cyan-400 transition">精選作品</a></li>
+                        <li><a href="#" class="hover:text-cyan-400 transition">團隊介紹</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">聯繫</h4>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li><a href="mailto:info@hyperviewglobal.com" class="hover:text-cyan-400 transition">info@hyperviewglobal.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-slate-700 pt-8 flex flex-col md:flex-row justify-center items-center text-center">
+                <p class="text-slate-400 text-sm">
+                    © 2026 HVG ALL RIGHT RESERVED. 保留所有權利
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
